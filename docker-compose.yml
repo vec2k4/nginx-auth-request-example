@@ -11,4 +11,5 @@ services:
     image: node:10-stretch
     volumes:
       - ./auth_backend/:/home/node/app
-    command: node /home/node/app/main.js
+    working_dir: /home/node/app
+    command: node ./main.js
